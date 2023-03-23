@@ -68,9 +68,9 @@
     display: none
 }
 
-/* .opcoes_item {
+.opcoes_item {
     display: none;
-} */
+}
 
 @media screen and (min-width: 1024px) {
     
