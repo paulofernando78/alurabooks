@@ -17,7 +17,7 @@ nav {
 
 .gif {
     /* margin: auto; */
-    width: 60px;
+    width: 70px;
 }
 
 .categorias {
@@ -31,7 +31,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 7.16vh;
     background-color: white;
     box-shadow: 2px 2px 5px 1px;
     padding: 1em;
