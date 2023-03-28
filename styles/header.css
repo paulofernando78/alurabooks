@@ -1,65 +1,106 @@
+header {
+}
+
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
     background-color: white;
 }
 
-.nav__menu {
+a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+button {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: none;
+}
+
+#btn-mobile {
     margin: 10px;
-    cursor: pointer;
+    padding: 0;
+}
+.nav__menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: white;
+    position: absolute;
+    top: 5.8vh;
+    padding: 30px;
+    z-index: 2;
+}
+
+a:hover {
+    color:rgba(128, 128, 128, 0.514);
+}
+
+#categorias {
+    color: var(--laranja);
+    font-weight: 700;
 }
 
 .nav__titulo {
     font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    width: 150px;
+}
+
+span {
+    font-weight: bold;
 }
 
 .gif {
-    /* margin: auto; */
-    width: 70px;
+    width: 50px;
+    filter: drop-shadow(0 0 1px);
+    padding-right: 5.5px;
+}
+.nav__icones {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
 }
 
-.categorias {
-    color: orange;
-    font-weight: 700;
-    margin-bottom: 10px;
+.nav__menu__list2 {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .nav__menu__list2 {
+        display: flex;
+
+    }
+
+    .nav__titulo {
+        font-size:28px;
+    }
+
+    .nav__titulo {
+        width: 460px
+    }
+}
+
+.nav__menu__list2 {
+    width: 460px;
 }
 
 .nav__menu__list {
-    /* display: none; */
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 7.16vh;
-    background-color: white;
-    box-shadow: 2px 2px 5px 1px;
-    padding: 1em;
-    gap: 8px
+    right: 440px;
 }
 
-.nav__menu__item a {
-    font-family: var(--fonte-secundaria);
-    text-decoration: none;
-
+#categorias {
+    display: none;
 }
 
-.nav__icones {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 10px;
+.nav__menu__list2 {
+    gap: 20px ;
+    font-weight: 400;
 }
-
-/* nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-} */
-
-@media (min-width: 1024px) {
-    
-    }
 
 @media (min-width: 1728px) {
     

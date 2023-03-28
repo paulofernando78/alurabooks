@@ -6,7 +6,3 @@ const swiper = new Swiper('.swiper', {
         type: 'bullets',
     },
 });
-
-function clickMenu() {
-    nav__menu__list.style.display = 'block'
-}

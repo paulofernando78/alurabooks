@@ -24,7 +24,7 @@
     padding: 1em;
     border: 1px solid var(--azul);
     border-radius: 24px;
-    width: 91.9%;
+    width: 97%;
     color: var(--azul);
 }
 
@@ -35,5 +35,12 @@
     padding-left: 2.3em;
     position: absolute;
     top: 12px;
-    right: 165px;
+    right: 219px;
+}
+
+@media (min-width: 1024px) {
+
+    .contato__email::placeholder {
+        right: 795px;
+    }
 }

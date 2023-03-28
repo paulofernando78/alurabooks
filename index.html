@@ -15,17 +15,27 @@
 </head>
 <body>
     <header>
-        <nav>            
-            <img src="img/menu.svg" alt="Menu" class="nav__menu" onclick="clickMenu()">
-                    <ul class="nav__menu__list">
-                        <li class="nav__menu__item categorias">CATEGORIAS</li>
-                        <li class="nav__menu__item"><a href="#">Programação</a></li>
-                        <li class="nav__menu__item"><a href="#">Front-End</a></li>
-                        <li class="nav__menu__item"><a href="#">Infraestrutura</a></li>
-                        <li class="nav__menu__item"><a href="#">Business</a></li>
-                        <li class="nav__menu__item"><a href="#">Design & UX</a></li></ul>
-            <h1 class="nav__titulo"><h1><b>Alura</b>Books</h1>
+        <nav>
+            <button id="btn-mobile">
+                <img src="img/menu.svg" alt="Menu" class="nav__menu">
+            </button>            
+            <ul class="nav__menu__list">
+                <li id="categorias">CATEGORIAS</li>
+                <li class="nav__menu__item"><a href="#">Programação</a></li>
+                <li class="nav__menu__item"><a href="#">Front-End</a></li>
+                <li class="nav__menu__item"><a href="#">Infraestrutura</a></li>
+                <li class="nav__menu__item"><a href="#">Business</a></li>
+                <li class="nav__menu__item"><a href="#">Design & UX</a></li>
+            </ul>
             <img src="https://media.giphy.com/media/EDN0u0eYhy7VyMNym2/giphy.gif" alt="Book" class="gif">
+            <h1 class="nav__titulo"><span>Alura</span>Books</h1>
+            <div>
+                <ul class="nav__menu__list2">
+                    <li>CATEGORIAS</li>
+                    <li>FAVORITOS</li>
+                    <li>MINHA ESTANTE</li>
+                </ul>
+            </div>
             <div class="nav__icones">
                 <img src="img/Favoritos.svg" alt="Ícone Favoritos">
                 <img src="img/Compras.svg" alt="Ícone Compras">
@@ -157,10 +167,10 @@
                 <a href="#" class="topicos__link">Python</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">OO</a>
+                <a href="#" class="topicos__link" id="OO">OO</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Java</a>
+                <a href="#" class="topicos__link" id="java">Java</a>
             </li>
         </ul>
     </section>
