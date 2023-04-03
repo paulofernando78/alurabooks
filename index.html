@@ -12,31 +12,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/button-menu.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <button id="btn-mobile">
-                <img src="img/menu.svg" alt="Menu" class="nav__menu">
-            </button>            
-            <ul class="nav__menu__list">
-                <li id="categorias">CATEGORIAS</li>
-                <li class="nav__menu__item"><a href="#">Programação</a></li>
-                <li class="nav__menu__item"><a href="#">Front-End</a></li>
-                <li class="nav__menu__item"><a href="#">Infraestrutura</a></li>
-                <li class="nav__menu__item"><a href="#">Business</a></li>
-                <li class="nav__menu__item"><a href="#">Design & UX</a></li>
-            </ul>
+        <nav class="navbar">
+            <button onclick="button_menu()" class="button-menu" id="button-menu"><img src="img/menu.svg" alt="Menu" ></button>
+            <div class="menu-mobile" id="menu-mobile">
+                <ul>
+                    <li id="categorias">CATEGORIAS</li>
+                    <li><a href="#">Programação</a></li>
+                    <li><a href="#">Front-End</a></li>
+                    <li><a href="#">Infraestrutura</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Design & UX</a></li>
+                </ul>
+            </div>
             <img src="https://media.giphy.com/media/EDN0u0eYhy7VyMNym2/giphy.gif" alt="Book" class="gif">
-            <h1 class="nav__titulo"><span>Alura</span>Books</h1>
-            <div>
-                <ul class="nav__menu__list2">
+            <h1 class="nav-titulo"><span>Alura</span>Books</h1>
+            <div class="navbar-menu2">
+                <ul>
                     <li>CATEGORIAS</li>
                     <li>FAVORITOS</li>
                     <li>MINHA ESTANTE</li>
                 </ul>
             </div>
-            <div class="nav__icones">
+            <div class="navbar-icons">
                 <img src="img/Favoritos.svg" alt="Ícone Favoritos">
                 <img src="img/Compras.svg" alt="Ícone Compras">
                 <img src="img/Usuario.svg" alt="Ícone Usuário">
@@ -184,13 +187,6 @@
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Alura</h2>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
-    <script>
-        
-    </script>
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
