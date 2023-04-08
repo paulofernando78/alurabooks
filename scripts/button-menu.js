@@ -1,10 +1,8 @@
-var x = document.querySelector("#menu-mobile ul");
-x.style.visibility === "hidden";
-
 function button_menu() {
-  if (x.style.visibility === "hidden") {
-    x.style.visibility = "visible";
+  const menuElement = document.querySelector("#menu-mobile ul");
+  if (menuElement.classList.contains("hidden")) {
+    menuElement.classList.remove("hidden");
   } else {
-    x.style.visibility = "hidden";
+    menuElement.classList.add("hidden");
   }
 }
